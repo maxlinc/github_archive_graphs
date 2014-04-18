@@ -1,0 +1,3 @@
+SELECT type, repository_name, repository_owner, repository_language, repository_description, url, payload_pull_request_head_repo_size, PARSE_UTC_USEC(created_at) as timestamp
+FROM [githubarchive:github.timeline]
+WHERE LOWER(repository_owner) CONTAINS "thoughtworks";

@@ -1,0 +1,3 @@
+SELECT *
+FROM [githubarchive:github.timeline]
+WHERE LOWER(payload_target_login) == "maxlinc";
